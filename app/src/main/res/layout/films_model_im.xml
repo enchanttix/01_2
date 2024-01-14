@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:id="@+id/spisok"
+        android:layout_width="384dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageFilm"
+                android:layout_width="58dp"
+                android:layout_height="86dp"
+                app:srcCompat="@android:drawable/ic_delete" />
+
+            <TextView
+                android:id="@+id/nameFilm"
+                android:layout_width="212dp"
+                android:layout_height="35dp"
+                android:text="Название фильма"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"/>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/star"/>
+
+            <TextView
+                android:id="@+id/reiting"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:text="0,0"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"/>
+
+        </TableRow>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#4CBBBF"/>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
